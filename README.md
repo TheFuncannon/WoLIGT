@@ -1,2 +1,2 @@
 # WoLIGT
-In-Game Time Component for LiveSplit
+Wizard of Legend In-Game Time Component for LiveSplit
