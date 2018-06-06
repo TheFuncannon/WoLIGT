@@ -17,7 +17,7 @@ start
 
 reset
 {
-	if(!current.inGame || (current.gameTime < old.gameTime) 
+	if(!current.inGame || (current.gameTime < old.gameTime)) 
 	{
     		vars.canSplit = 0;
     		return true;
