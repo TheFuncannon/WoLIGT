@@ -17,7 +17,11 @@ start
 
 reset
 {
-	return (!current.inGame || (current.gameTime < old.gameTime));
+	if(!current.inGame || (current.gameTime < old.gameTime) 
+	{
+    		vars.canSplit = 0;
+    		return true;
+	}
 }
 
 split
@@ -38,8 +42,6 @@ split
 		vars.canSplit = 0;
 		return true;	
 	}
-
-
 }
 
 isLoading
@@ -51,5 +53,6 @@ gameTime
 {
 	return TimeSpan.FromSeconds(current.gameTime);
 }
+
 
 
