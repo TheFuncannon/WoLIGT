@@ -22,7 +22,7 @@ reset
 
 split
 {
-	if (old.gameTime != 0.0 && current.gameTime < 0.5 && old.floorTime > current.floorTime) {
+	if (old.gameTime != 0.0 && current.gameTime != 0.0 && old.floorTime > current.floorTime) {
 		vars.canSplit = 1;
 	}
 	if (vars.canSplit == 1 && current.gameTime > old.gameTime)
